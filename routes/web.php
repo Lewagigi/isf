@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('radioweb.radioweb');
+    return view('main');
 });
 
 Route::view('/home','home')->middleware('auth');
