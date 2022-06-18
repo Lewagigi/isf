@@ -55,87 +55,6 @@
             margin: 0px;
         }
 
-        /*
-        .navbar {
-          overflow: hidden;
-          background-color: #333;
-
-        }
-
-        .navbar a {
-          float: left;
-          font-size: 16px;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-
-        .dropdown {
-          float: left;
-          overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-          font-size: 16px;
-          border: none;
-          outline: none;
-          color: white;
-          padding: 14px 16px;
-          background-color: inherit;
-          font-family: inherit;
-          margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-          background-color: red;
-        }
-
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-
-        .dropdown-content a {
-          float: none;
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-        }
-
-        .dropdown-content a:hover {
-          background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-          display: block;
-        } */
-
-
-
-        /*.navbar {
-          overflow: hidden;
-           background-color: #8F7AB5;
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-
-        .navbar a {
-          float: left;
-          display: block;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-size: 17px;
-        }*/
 
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -199,54 +118,7 @@
         .subnav:hover .subnav-content {
             display: block;
         }
-        /*
-        .navbar a:hover {
-          background: #ddd;
-          color: black;
-        } */
 
-        /*
-        * {
-          box-sizing: border-box;
-        }
-
-        body {
-          margin: 0;
-          font-family: Arial;
-          font-size: 17px;
-        }
-
-        #myVideo {
-          position: fixed;
-          right: 0;
-          bottom: 0;
-          min-width: 100%;
-          min-height: 100%;
-        }
-
-        .content {
-          position: fixed;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.5);
-          color: #f1f1f1;
-          width: 100%;
-          padding: 20px;
-        }
-
-        #myBtn {
-          width: 200px;
-          font-size: 18px;
-          padding: 10px;
-          border: none;
-          background: #000;
-          color: #fff;
-          cursor: pointer;
-        }
-
-        #myBtn:hover {
-          background: #ddd;
-          color: black;
-        } */
 
 
         .flex-container {
@@ -379,38 +251,6 @@
             border-radius: 50%;
         }
 
-
-
-        /* .styled {
-            position: relative;
-            top: -50px;
-            left: 410px;
-
-            border: 0;
-            line-height: 2.5;
-            padding: 0 20px;
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            border-radius: 10px;
-            background-color: rgba(220, 0, 0, 1);
-            background-image: linear-gradient(to top left,
-                                              rgba(0, 0, 0, .2),
-                                              rgba(0, 0, 0, .2) 30%,
-                                              rgba(0, 0, 0, 0));
-            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                        inset -2px -2px 3px rgba(0, 0, 0, .6);
-        }
-
-        .styled:hover {
-            background-color: rgba(255, 0, 0, 1);
-        }
-
-        .styled:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                        inset 2px 2px 3px rgba(0, 0, 0, .6);
-        } */
 
 
 
@@ -667,86 +507,6 @@
 
 
 
-        /*
-        .favorite {
-            position: relative;
-            top: 80px;
-            right: 380px;
-
-            border: 0;
-            line-height: 2.5;
-            padding: 0 20px;
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            border-radius: 10px;
-            background-color: white ;
-            background-image: linear-gradient(to top left,
-                                              rgba(0, 0, 0, .2),
-                                              rgba(0, 0, 0, .2) 30%,
-                                              rgba(0, 0, 0, 0));
-            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                        inset -2px -2px 3px rgba(0, 0, 0, .6);
-        }
-
-        .favorite:hover {
-            background-color: white ;
-
-        }
-
-        .favorite:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                        inset 2px 2px 3px rgba(0, 0, 0, .6);
-        } */
-
-
-
-        /*
-        body, html {
-          height: 100%;
-          margin: 0;
-          font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-
-        .bg-image {
-
-          background-image: url("photographer.jpg");
-
-
-          filter: blur(8px);
-          -webkit-filter: blur(8px);
-
-
-          height: 100%;
-
-
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-
-
-        .bg-text {
-          background-color: rgb(0,0,0);
-          background-color: rgba(0,0,0, 0.4);
-          color: white;
-          font-weight: bold;
-          border: 3px solid #f1f1f1;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          z-index: 2;
-          width: 80%;
-          padding: 20px;
-          text-align: center;
-        } */
-
 
         .vertical-menu {
             position :relative ;
@@ -802,13 +562,6 @@
             background-size: cover;
         }
 
-        /* Images used */
-        .img1 { background-image: url("{{asset('/app/public/avatars/uMco351mYffWWOWY7iaC7TrKqj5MxzRD57aDLW5l.jpg')}}"); }
-        .img2 { background-image: url("https://radio.impactsansfrontieres.com/wp-content/uploads/2021/08/Back-player2.jpg"); }
-        .img3 { background-image: url("https://radio.impactsansfrontieres.com/wp-content/uploads/2021/08/cropped-FavIcon.png"); }
-        /*.img4 { background-image: url(""); }
-        .img5 { background-image: url(""); }
-        .img6 { background-image: url(""); }*/
 
         /* Position text in the middle of the page/image */
         .bg-text {
@@ -818,7 +571,7 @@
             font-weight: bold;
             font-size: 80px;
             border: 10px solid #f1f1f1;
-            position: fixed;
+             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -860,84 +613,6 @@
     <link rel="stylesheet" href="css/les-styles.css">
 
 
-    <!-- <script>
-function initComparisons() {
-  var x, i;
-  /*find all elements with an "overlay" class:*/
-  x = document.getElementsByClassName("img-comp-overlay");
-  for (i = 0; i < x.length; i++) {
-    /*once for each "overlay" element:
-    pass the "overlay" element as a parameter when executing the compareImages function:*/
-    compareImages(x[i]);
-  }
-  function compareImages(img) {
-    var slider, img, clicked = 0, w, h;
-    /*get the width and height of the img element*/
-    w = img.offsetWidth;
-    h = img.offsetHeight;
-    /*set the width of the img element to 50%:*/
-    img.style.width = (w / 2) + "px";
-    /*create slider:*/
-    slider = document.createElement("DIV");
-    slider.setAttribute("class", "img-comp-slider");
-    /*insert slider*/
-    img.parentElement.insertBefore(slider, img);
-    /*position the slider in the middle:*/
-    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-    /*execute a function when the mouse button is pressed:*/
-    slider.addEventListener("mousedown", slideReady);
-    /*and another function when the mouse button is released:*/
-    window.addEventListener("mouseup", slideFinish);
-    /*or touched (for touch screens:*/
-    slider.addEventListener("touchstart", slideReady);
-    /*and released (for touch screens:*/
-    window.addEventListener("touchend", slideFinish);
-    function slideReady(e) {
-      /*prevent any other actions that may occur when moving over the image:*/
-      e.preventDefault();
-      /*the slider is now clicked and ready to move:*/
-      clicked = 1;
-      /*execute a function when the slider is moved:*/
-      window.addEventListener("mousemove", slideMove);
-      window.addEventListener("touchmove", slideMove);
-    }
-    function slideFinish() {
-      /*the slider is no longer clicked:*/
-      clicked = 0;
-    }
-    function slideMove(e) {
-      var pos;
-      /*if the slider is no longer clicked, exit this function:*/
-      if (clicked == 0) return false;
-      /*get the cursor's x position:*/
-      pos = getCursorPos(e)
-      /*prevent the slider from being positioned outside the image:*/
-      if (pos < 0) pos = 0;
-      if (pos > w) pos = w;
-      /*execute a function that will resize the overlay image according to the cursor:*/
-      slide(pos);
-    }
-    function getCursorPos(e) {
-      var a, x = 0;
-      e = (e.changedTouches) ? e.changedTouches[0] : e;
-      /*get the x positions of the image:*/
-      a = img.getBoundingClientRect();
-      /*calculate the cursor's x coordinate, relative to the image:*/
-      x = e.pageX - a.left;
-      /*consider any page scrolling:*/
-      x = x - window.pageXOffset;
-      return x;
-    }
-    function slide(x) {
-      /*resize the image:*/
-      img.style.width = x + "px";
-      /*position the slider:*/
-      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-    }
-  }
-}
-</script> -->
 </head>
 <body>
 
@@ -994,20 +669,7 @@ function initComparisons() {
         </nav>
 
 
-        <!-- <nav class="navbar">
-          <a href="#home">Home</a>
-       <a href="#news">News</a>
-       <div class="dropdown">
-         <button class="dropbtn">Dropdown
-           <i class="fa fa-caret-down"></i>
-         </button>
-         <div class="dropdown-content">
-           <a href="#">Link 1</a>
-           <a href="#">Link 2</a>
-           <a href="#">Link 3</a>
-         </div>
-       </div>
-        </nav> -->
+
     </header>
 
     <article class="article" id="un">
@@ -1060,41 +722,11 @@ function initComparisons() {
         </style>
 
 
-        {{-- <a href="" download>
-             <img src="/img/iStock-1145183163-min-460x307.jpg" alt="W3Schools" width="1000" height="742">
-         </a>
-         <a href="/img/" download>
-             <img src="/img/cropped-FavIcon.png" alt="W3Schools" width="1000" height="742">
-         </a>
-
-         <a href="/img/" download>
-             <img src="/img/image (5).png" alt="W3Schools" width="1000" height="742">
-         </a>
-
-         <a href="/img/" download>
-             <img src="/img/image (6).png" alt="W3Schools" width="1000" height="742">
-         </a>
-
-         <a href="/img/" download>
-             <img src="/img/evang-banner.jpg" alt="W3Schools" width="1000" height="742">
-         </a>
-   --}}
 
         <iframe  src="https://player.radioking.io/radio-impact-sans-frontieres-1/?c=%238F7AB5&c2=%23ffffff&f=h&i=1&p=1&s=0&li=0&popup=1&plc=0&h=145&l=430&v=2" style="border-radius: 5px; width: 430px; height: 145px; position:relative ; left :280px ; top:280px; z-index: 3;" frameBorder="0" ></iframe><script type="text/javascript" src="https://player.radioking.io/scripts/iframe.bundle.js"></script>
         <a href="" download>
-            <img src="/img/Back-player-1536x320.jpg" alt="W3Schools" width="1000" height="742">
+
         </a>
-
-
-        <div id="auCentre">
-
-            <div class="fondu">
-
-                <img class="haut" src="/img/cropped-FavIcon.png">
-            </div>
-
-        </div>
-
 
 
 
@@ -1115,9 +747,28 @@ function initComparisons() {
 
         <div class="content">
             <h1></h1>
-
             <button class="button"><a href="">Acceptez Jésus !</a></button>
-
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/image.png" class="" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/image (3).png" class="" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
 
@@ -1133,30 +784,9 @@ function initComparisons() {
 
 
 
-            <h3></h3>
-            <p class="col2"><br />
-            </p>
-
-            <h3></h3>
-            <p class="col2"><code></code><abbr title="seconds"></abbr><abbr></abbr> <br /><br />
-                <code></code> <a href="http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target"></a> </p>
-
-            <p class="col2"><code></code><code></code><code></code><code></code><code></code><code></code><br />
-                <code></code><code></code><code></code></p>
-
-            <p><strong></strong><a href="http://www.creativejuiz.fr/blog/" hreflang="fr"></a> <a href="http://www.creativejuiz.fr/blog/tag/slideshow" hreflang="fr"></a><br /><a href="http://www.creativejuiz.fr/blog/contact"></a></p>
-
-            <h3></h3>
-            <p><strong></strong> <a href="http://www.creativejuiz.fr" hreflang="fr" title="Creative Juiz web site (in french)"></a><br />
-                <strong></strong> </p>
-
-            <a href="http://css3create.com/" title="CSS3Create website (in french)" hreflang="fr"></a>
-
         </section>
 
 </body>
-
-
 
 
 
