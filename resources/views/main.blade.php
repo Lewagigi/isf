@@ -77,7 +77,7 @@
 
         .topnav {
             overflow: hidden;
-            background-color: #333;
+            background-color: #7B6998;
         }
 
         .topnav a {
@@ -91,7 +91,7 @@
         }
 
         .active {
-            background-color: #04AA6D;
+            background-color: #7B6998;
             color: white;
         }
 
@@ -110,7 +110,7 @@
             outline: none;
             color: white;
             padding: 14px 16px;
-            background-color: inherit;
+            background-color: #7B6998;
             font-family: inherit;
             margin: 0;
         }
@@ -118,7 +118,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color: #7B6998;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
@@ -134,13 +134,13 @@
         }
 
         .topnav a:hover, .dropdown:hover .dropbtn {
-            background-color: #555;
+            background-color: #7B6998;
             color: white;
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #7B6998;
+            color: #7B6998;
         }
 
         .dropdown:hover .dropdown-content {
@@ -181,7 +181,7 @@
 
     <style>
         .collapsible {
-            background-color: #777;
+            background-color: #7B6998;
             color: white;
             cursor: pointer;
             padding: 18px;
@@ -189,11 +189,12 @@
             border: none;
             text-align: center;
             outline: none;
-            font-size: 15px;
+            font-size: 35px;
+
         }
 
         .active, .collapsible:hover {
-            background-color: #555;
+            background-color: #7B6998;
         }
 
         .content {
@@ -207,16 +208,65 @@
 
     <style>
         .footer {
-            height :128px;
-            position: fixed;
+            position: relative;
+            height: 130px;
+            top:1130px;
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: red;
+            background-color:  #7B6998;
             color: white;
             text-align: center;
         }
     </style>
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+
+
+
+    <style>
+        .grid-container {
+            position: relative;
+            top: 320px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+
+
+
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
 </head>
@@ -241,9 +291,11 @@
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
+
 <div style="padding-left:16px">
 
 </div>
+
 
 <script>
     function myFunction() {
@@ -257,8 +309,8 @@
 </script>
 
 
-<main class="form-signin w-100 m-auto">
 
+<main class="form-signin w-100 m-auto">
 
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -268,7 +320,7 @@
                 <div class="carousel-item">
                     <img src="/img/isf2.png" class="d-block w-100" alt="...">
                 </div>
-
+                <iframe src="https://player.radioking.io/radio-impact-sans-frontieres-1/?c=%238F7AB5&c2=%23FFFFFF&f=h&i=0&p=0&s=0&li=0&popup=0&plc=NaN&h=undefined&l=100&v=2&fullsize"; style="border-radius: 5px; z-index: 3;position: relative; top: -3px; left: 20px; width: 30%; height: 14px; -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);" frameBorder="0" ></iframe><script type="text/javascript" src="https://player.radioking.io/scripts/iframe.bundle.js"></script>;
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -282,7 +334,7 @@
 
 
 
-    <button type="button" class="collapsible">Open Collapsible</button>
+    <button type="button" class="collapsible">J'accepte Jésus</button>
     <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
@@ -315,24 +367,16 @@
 
 </main>
 
+<div class="row">
+    <div class="column" style="background-color:#aaa;">
 
+        <img src="/img/Rester-en-contact-1024x683.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="column" style="background-color:#bbb;">
 
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-</div>
-
-<div class="card">
-    <img src="..." class="card-img-top" alt="...">
-
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <img src="/img/Nouveau-depart-1024x683.jpeg" class="d-block w-100" alt="...">
     </div>
 </div>
-
 
 
 
@@ -340,72 +384,29 @@
     <div class="row gx-5">
         <div class="col">
 
-            <div class="card" aria-hidden="true">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title placeholder-glow">
-                        <span class="placeholder col-6"></span>
-                    </h5>
-                    <p class="card-text placeholder-glow">
-                        <span class="placeholder col-7"></span>
-                        <span class="placeholder col-4"></span>
-                        <span class="placeholder col-4"></span>
-                        <span class="placeholder col-6"></span>
-                        <span class="placeholder col-8"></span>
-                    </p>
-                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
-                </div>
-            </div>
-            <div class="p-3 border bg-light">Custom column padding</div>
-        </div>
-        <div class="col">
-
-            <div class="card" aria-hidden="true">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title placeholder-glow">
-                        <span class="placeholder col-6"></span>
-                    </h5>
-                    <p class="card-text placeholder-glow">
-                        <span class="placeholder col-7"></span>
-                        <span class="placeholder col-4"></span>
-                        <span class="placeholder col-4"></span>
-                        <span class="placeholder col-6"></span>
-                        <span class="placeholder col-8"></span>
-                    </p>
-                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
-                </div>
-            </div>
-            <div class="p-3 border bg-light">Custom column padding</div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false" style="position: relative; top: 220px;">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <img src="/img/La dépendance.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/La fin du monde.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/La délivrance.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/Le pardon.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
                         <img src="/img/La pâque.jpg" class="d-block w-100" alt="...">
                     </div>
+
                     <div class="carousel-item">
                         <img src="/img/La Guérison.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
-                        <img src="/img/La repentance.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/La dépendance.jpg" class="d-block w-100" alt="...">
-                    </div>
 
-                    <div class="carousel-item">
-                        <img src="/img/La paix intérieure.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/Qui est JESUS.jpg" class="d-block w-100" alt="...">
-                    </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -418,95 +419,125 @@
             </div>
         </div>
 
-    </div>
-
-</div>
-
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-</div>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-</div>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-</div>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
 </div>
 
 
 
 
 
-<footer class="container py-5">
-    <h2>Fixed/Sticky Footer Example</h2>
-    <p>The footer is placed at the bottom of the page.</p>
+
+
+
+
+    <div class="grid-container">
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div></div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="footer">
-        <p>Footer</p>
+        <div><p>Footer</p></div>
     </div>
-</footer>
-
-
 
 
 
 </body>
+
+
 </html>
