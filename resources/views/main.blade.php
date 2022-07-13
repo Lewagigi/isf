@@ -156,6 +156,29 @@
             bottom: 8px;
             width: 100%;
             text-align: center;
+
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+           
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
         }
 
         /* Number text (1/3 etc) */
@@ -330,6 +353,30 @@
         .default:hover {background: #ddd;}
     </style>
 
+
+    <style>
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+
 </head>
 <body>
 
@@ -377,14 +424,19 @@
     <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
         <img src="/img/isf2.png" style="width:100%">
-        <div class="text"></div>
+
+        <div class="text">
+            <button class="button">Click Me</button>
+        </div>
     </div>
 
 
     <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
         <img src="img/isf1.png" style="width:100%">
-        <div class="text"></div>
+        <div class="text">
+            <button class="button">Click Me</button>
+        </div>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">❮</a>
