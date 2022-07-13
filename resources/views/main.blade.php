@@ -238,6 +238,98 @@
 
     </style>
 
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .btn:hover {
+            background-color: black;
+        }
+    </style>
+
+
+    <style>
+        .btn {
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            top: -250px;
+            left: 190px;
+            z-index: 1;
+        }
+
+        .success {background-color: #04AA6D;} /* Green */
+        .success:hover {background-color: #46a049;}
+
+        .info {background-color: #2196F3;} /* Blue */
+        .info:hover {background: #0b7dda;}
+
+        .warning {background-color: #ff9800;} /* Orange */
+        .warning:hover {background: #e68a00;}
+
+        .danger {background-color: #f44336;} /* Red */
+        .danger:hover {background: #da190b;}
+
+        .default {background-color: #e7e7e7; color: black;} /* Gray */
+        .default:hover {background: #ddd;}
+    </style>
+
+    <style>
+        .bt {
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            top: -250px;
+            right: -948px;
+
+        }
+
+        .success {background-color: #04AA6D;} /* Green */
+        .success:hover {background-color: #46a049;}
+
+        .info {background-color: #2196F3;} /* Blue */
+        .info:hover {background: #0b7dda;}
+
+        .warning {background-color: #ff9800;} /* Orange */
+        .warning:hover {background: #e68a00;}
+
+        .danger {background-color: #f44336;} /* Red */
+        .danger:hover {background: #da190b;}
+
+        .default {background-color: #e7e7e7; color: black;} /* Gray */
+        .default:hover {background: #ddd;}
+    </style>
+
 </head>
 <body>
 
@@ -342,13 +434,27 @@
 
 <p></p>
 
+{{--
+<div class="row">
+
+
+        <img src="/img/Rester-en-contact-1024x683.jpeg"  style="width:700px ;position: relative; left: 20px;">
+
+            <img src="/img/Nouveau-depart-1024x683.jpeg"  style="width:700px ;position: relative; left: 60px;" >
+
+</div>
+--}}
 
 <div class="row">
-            <img src="/img/Rester-en-contact-1024x683.jpeg"  style="width:700px ;position: relative; left: 20px;">
-            <img src="/img/Nouveau-depart-1024x683.jpeg"  style="width:700px ;position: relative; left: 60px;" >
+    <img src="/img/Rester-en-contact-1024x683.jpeg"  style="width:710px ;position: relative; left: 25px;">
+    <img src="/img/Nouveau-depart-1024x683.jpeg"  style="width:710px ;position: relative; left: 60px;" >
+
 </div>
 
 
+<button class="btn success">Success</button>
+
+<button class="bt warning">Warning</button>
 
 
 
