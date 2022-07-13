@@ -110,7 +110,7 @@
         * {box-sizing: border-box}
         body {font-family: Verdana, sans-serif; margin:0 }
         .mySlides {display: none}
-        img {vertical-align: middle;}
+        img {vertical-align: middle; }
 
         /* Slideshow container */
         .slideshow-container {
@@ -151,11 +151,14 @@
         .text {
             color: #f2f2f2;
             font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
+            padding: 0px ;
+            position: relative;
+            margin: 10px;
+            top:-390px;
             bottom: 8px;
             width: 100%;
             text-align: center;
+
 
         .button {
             padding: 15px 25px;
@@ -168,7 +171,7 @@
             border: none;
             border-radius: 15px;
             box-shadow: 0 9px #999;
-           
+
         }
 
         .button:hover {background-color: #3e8e41}
@@ -177,7 +180,8 @@
             background-color: #3e8e41;
             box-shadow: 0 5px #666;
             transform: translateY(4px);
-        }
+           }
+
 
         }
 
@@ -221,12 +225,14 @@
             border: none;
             background-color: #04AA6D;
             color: white;
-            padding:  28px;
+
             font-size: 16px;
             cursor: pointer;
             text-align: center;
-            height:73px;
+            height:193px;
             margin: 0px;
+            position: relative;
+            top: -34px;
         }
 
         .block:hover {
@@ -498,7 +504,7 @@
 --}}
 
 <div class="row">
-    <img src="/img/Rester-en-contact-1024x683.jpeg"  style="width:710px ;position: relative; left: 25px;">
+    <img src="/img/Rester-en-contact-1024x683.jpeg"  style="width:710px ;position: relative; left: 60px;">
     <img src="/img/Nouveau-depart-1024x683.jpeg"  style="width:710px ;position: relative; left: 60px;" >
 
 </div>
