@@ -634,7 +634,7 @@
 
     <div class="column">
         <div class="card">
-            <h3>Card 3</h3>
+            <img src="/img/La-repentance-1024x684.jpg" alt="Snow" style="width:100%">
             <p>Some text</p>
             <p>Some text</p>
         </div>
@@ -646,13 +646,25 @@
 
 <div class="row">
     <div class="column">
-        <img src="img_snow.jpg" alt="Snow" style="width:100%">
+        <img src="/img/La-repentance-1024x684.jpg" alt="Snow" style="width:100%">
     </div>
     <div class="column">
-        <img src="img_forest.jpg" alt="Forest" style="width:100%">
+        <img src="/img/La-paix-interieure-1024x684.jpg" alt="Forest" style="width:100%">
     </div>
     <div class="column">
-        <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+        <img src="/img/La-delivrance-1024x704.jpg" alt="Mountains" style="width:100%">
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img src="/img/La-repentance-1024x684.jpg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="/img/La-paix-interieure-1024x684.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="/img/La-delivrance-1024x704.jpg" alt="Mountains" style="width:100%">
     </div>
 </div>
 
@@ -667,7 +679,7 @@
 </body>
 
 <footer>
-    
+
 </footer>
 
 </html>
