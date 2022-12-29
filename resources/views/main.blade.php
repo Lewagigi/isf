@@ -588,85 +588,101 @@
 
 <div class="row">
     <div class="column">
-        <div class="card">
-            <h3>Card 1</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-        </div>
+        <img src="/img/La pâque.jpg" alt="Snow" style="width:100%">
     </div>
-
     <div class="column">
-        <div class="card">
-            <h3>Card 2</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-        </div>
+        <img src="/img/La-Misericorde-de-DIEU-1024x427.jpeg" alt="Forest" style="width:100%">
     </div>
-
     <div class="column">
-        <div class="card">
-            <h3>Card 3</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-        </div>
+        <img src="/img/Le pardon.jpg" alt="Mountains" style="width:100%">
     </div>
-
-
 </div>
 
 
 <div class="row">
     <div class="column">
-        <div class="card">
-            <h3>Card 1</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-        </div>
+        <img src="/img/La délivrance.jpg" alt="Snow" style="width:100%">
     </div>
-
     <div class="column">
-        <div class="card">
-            <h3>Card 2</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-        </div>
+        <img src="/img/La repentance.jpg" alt="Forest" style="width:100%">
     </div>
-
     <div class="column">
-        <div class="card">
-            <img src="/img/La-repentance-1024x684.jpg" alt="Snow" style="width:100%">
-            <p>Some text</p>
-            <p>Some text</p>
-        </div>
+        <img src="/img/La paix intérieure.jpg" alt="Mountains" style="width:100%">
     </div>
+</div>
 
 
+
+<div class="row">
+    <div class="column">
+        <img src="/img/image (3).png" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="/img/image (4).png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="/img/La dépendance.jpg" alt="Mountains" style="width:100%">
+    </div>
+</div>
+
+<h1>
+    <br>
+
+</h1>
+
+<h1> PodCast : Les personnes qui ont fait une rencontre </h1>
+
+<div class="row">
+    <div class="column">
+        <img src="/img/1.png" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="/img/2.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="/img/3.png" alt="Mountains" style="width:100%">
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img src="/img/4.png" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="/img/7.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="/img/12.png" alt="Mountains" style="width:100%">
+    </div>
 </div>
 
 
 <div class="row">
     <div class="column">
-        <img src="/img/La-repentance-1024x684.jpg" alt="Snow" style="width:100%">
+        <img src="/img/14.png" alt="Snow" style="width:100%">
     </div>
     <div class="column">
-        <img src="/img/La-paix-interieure-1024x684.jpg" alt="Forest" style="width:100%">
+        <img src="/img/17.png" alt="Forest" style="width:100%">
     </div>
     <div class="column">
-        <img src="/img/La-delivrance-1024x704.jpg" alt="Mountains" style="width:100%">
+        <img src="/img/18.png" alt="Mountains" style="width:100%">
     </div>
 </div>
 
+
+
 <div class="row">
     <div class="column">
-        <img src="/img/La-repentance-1024x684.jpg" alt="Snow" style="width:100%">
+        <img src="/img/18.png" alt="Snow" style="width:100%">
     </div>
     <div class="column">
-        <img src="/img/La-paix-interieure-1024x684.jpg" alt="Forest" style="width:100%">
+        <img src="/img/19.png" alt="Forest" style="width:100%">
     </div>
     <div class="column">
-        <img src="/img/La-delivrance-1024x704.jpg" alt="Mountains" style="width:100%">
+        <img src="/img/21.png" alt="Mountains" style="width:100%">
     </div>
 </div>
+
 
 
 
