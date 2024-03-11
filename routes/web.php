@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ArtisteController;
+use App\Http\Controllers\Personnenregistree;
 use App\Http\Controllers\AuthenticatedSessionController;
 use App\Http\Controllers\ProduitController;
 use App\Http\Controllers\RegisterUserController;
@@ -21,7 +21,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('main');
-});
+})->name('maiin');
+
 
 Route::view('/home','home')->middleware('auth');
 
@@ -40,24 +41,23 @@ Route::get('/register', [RegisterUserController::class,'showForm'])
     ->name('register');
 Route::post('/register', [RegisterUserController::class,'store']);
 
-Route::get('/Webradio/AffichageArtiste',[ArtisteController::class,'affichageartiste'])
-    ->name('artisre') ;
+
 
 /*admin*/
 Route::middleware(['is_admin','auth'])->group(function () {
-Route::get('/Webradio/create',[ArtisteController::class,'ajoutartiste'])
+Route::get('/Webradio/create',[Personnenregistree::class,'ajoutartiste'])
     ->name('ajoutartist');
-Route::post('/Webradio/create',[ArtisteController::class,'ajoutartist'])
+Route::post('/Webradio/create',[Personnenregistree::class,'ajoutartist'])
     ->name('artiste');
 
-Route::get('/Webradio/{id}/edit',[ArtisteController::class,'modartisteform'])
+Route::get('/Webradio/{id}/edit',[Personnenregistree::class,'modartisteform'])
     ->name('modarform');
-Route::post('/Webradio/{id}/edit',[ArtisteController::class,'mod'])
+Route::post('/Webradio/{id}/edit',[Personnenregistree::class,'mod'])
     ->name('modeart');
 
-Route::get('/Webradio/{id}/sup',[ArtisteController::class,'supartisteform'])
+Route::get('/Webradio/{id}/sup',[Personnenregistree::class,'supartisteform'])
     ->name('suparform');
-Route::post('/Webradio/{id}/sup',[ArtisteController::class,'supartist'])
+Route::post('/Webradio/{id}/sup',[Personnenregistree::class,'supartist'])
     ->name('supart');
 });
 
@@ -70,21 +70,59 @@ Route::get('webradio/utilisantderoulan',[UserController::class,'deroulantutilisa
 
 /*utilisateur*/
 
-Route::get('/decouvrirjésus', function () {
-    return view('radioweb.DecouvrirJesus');
-})->name('decouvjésus');
+Route::get('/lespersonnesenregistres', [Personnenregistree::class,'affichagelistepersonne'])->name('lespersonnesenregistrees');
+
+Route::get('/Nouscontacter', [Personnenregistree::class,'ajoutnouvellepersonne'])->name('nouscontacter');
+Route::post('/Nouscontacter', [Personnenregistree::class,'ajoutpersonne'])->name('contacter');
+
+
+
+
+
 Route::get('/devenirpartenaire', function () {
     return view('radioweb.devenirpartenaire');
 })->name('devenirpartenaire');
-Route::get('/NotreVision', function () {
-    return view('radioweb.NotreVision');
-})->name('notrevision');
-Route::get('/podcast', function () {
-    return view('radioweb.PodCasts');
-})->name('podcasts');
-Route::get('/nouveaudepart', function () {
-    return view('radioweb.NouveauDepart');
-})->name('nouveaudepart');
+
+
+Route::get('/Actesdecompassion', function () {
+    return view('radioweb.Actesdecompassion');
+})->name('actesdecompassion');
+
+Route::get('/campagnevangelisation', function () {
+    return view('radioweb.campagnevngelisation');
+})->name('evangelisation');
+
+Route::get('/Nosactions', function () {
+    return view('radioweb.Nosactions');
+})->name('nosactions');
+
+Route::get('/presentationisf', function () {
+    return view('radioweb.PresentationISF');
+})->name('presentationISF');
+
+
+Route::get('/CaoSurleMali', function () {
+    return view('radioweb.CapSurleMali');
+})->name('capsurlemali');
+
+Route::get('/Inhaiti', function () {
+    return view('radioweb.Inhaiti');
+})->name('inhaiti');
+
+Route::get('/Madagascar', function () {
+    return view('radioweb.CapSurMadagacar');
+})->name('capsurmadagascar');
+
+
+Route::get('/Commentparticiper', function () {
+    return view('radioweb.Commentparticiper');
+})->name('commentparticiper');
+
+
+Route::get('/OperationCartable', function () {
+    return view('radioweb.OperationCartable');
+})->name('operationcartable');
+
 
 
 

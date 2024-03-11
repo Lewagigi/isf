@@ -1,1488 +1,202 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>
-        Web Radio
-    </title>
+    <title>Impact Sans Frontières</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        header {
-            grid-column: 1 / 3;
-            z-index: 1;
-        }
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-        article{
-            position: relative;
-            top :-20px ;
-            height: 6px;
-            margin: 0px;
-            grid-column: 1/3;
-        }
-
-        section {
-            position: relative;
-            margin-top: -1200px ;
-            right: 100px;
-            background-color: white;
-            height: 20px;
-            width: 950px;
-            grid-column: 2/3;
-
-
-        }
-
-
-        footer {
-            position:relative;
-            top:1880px;
-            width: auto;
-            height: 122px ;
-            background-color: #8F7AB5;
-            grid-column: 1/3;
-        }
-
-        #main {
-            display: grid;
-            grid-template-rows: 100px auto 50px 50px ;
-            grid-template-columns:minmax(200px,3fr) 9fr;
-            padding: 0px;
-            margin: 0px;
-            height: 1500px; /* Used in this example to enable scrolling */
-        }
-
-
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0px;
-        }
-
-        /*
-        .navbar {
-          overflow: hidden;
-          background-color: #333;
-
-        }
-
-        .navbar a {
-          float: left;
-          font-size: 16px;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-
-        .dropdown {
-          float: left;
-          overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-          font-size: 16px;
-          border: none;
-          outline: none;
-          color: white;
-          padding: 14px 16px;
-          background-color: inherit;
-          font-family: inherit;
-          margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-          background-color: red;
-        }
-
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-
-        .dropdown-content a {
-          float: none;
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-        }
-
-        .dropdown-content a:hover {
-          background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-          display: block;
-        } */
-
-
-
-        /*.navbar {
-          overflow: hidden;
-           background-color: #8F7AB5;
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-
-        .navbar a {
-          float: left;
-          display: block;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-size: 17px;
-        }*/
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        .navbar {
-            overflow: hidden;
-            background-color: #8F7AB5;
-        }
-
-        .navbar a {
-            float: left;
-            font-size: 16px;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .subnav {
-            float: left;
-            overflow: hidden;
-        }
-
-        .subnav .subnavbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .navbar a:hover, .subnav:hover .subnavbtn {
-            background-color: #8F7AB5;
-        }
-
-        .subnav-content {
-            display: none;
-            position: absolute;
-            left: 0;
-            background-color: #8F7AB5;
-            width: 100%;
-            z-index: 1;
-        }
-
-        .subnav-content a {
-            float: left;
-            color: white;
-            text-decoration: none;
-        }
-
-        .subnav-content a:hover {
-            background-color: #eee;
-            color: black;
-        }
-
-        .subnav:hover .subnav-content {
-            display: block;
-        }
-        /*
-        .navbar a:hover {
-          background: #ddd;
-          color: black;
-        } */
-
-        /*
-        * {
-          box-sizing: border-box;
-        }
-
-        body {
-          margin: 0;
-          font-family: Arial;
-          font-size: 17px;
-        }
-
-        #myVideo {
-          position: fixed;
-          right: 0;
-          bottom: 0;
-          min-width: 100%;
-          min-height: 100%;
-        }
-
-        .content {
-          position: fixed;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.5);
-          color: #f1f1f1;
-          width: 100%;
-          padding: 20px;
-        }
-
-        #myBtn {
-          width: 200px;
-          font-size: 18px;
-          padding: 10px;
-          border: none;
-          background: #000;
-          color: #fff;
-          cursor: pointer;
-        }
-
-        #myBtn:hover {
-          background: #ddd;
-          color: black;
-        } */
-
-
-        .flex-container {
-            position: relative;
-            top: 70px;
-
-            display: flex;
-            background-color: #8F7AB5;
-
-
-
-        }
-
-        .flex-container > div {
-            background-color: #f1f1f1;
-            margin: 30px;
-            padding:50px;
-            font-size: 30px;
-            cursor:hand;
-        }
-
-
-
-
-
-
-        .flex-container {
-
-
-
-            display: flex;
-            background-color: #8F7AB5;
-
-
-
-        }
-
-        .flex-container > div {
-            background-color: #f1f1f1;
-            margin: 20px;
-            padding:40px;
-            font-size: 30px;
-            cursor:hand;
-        }
-
-        /*a completer pour plus de themes*/
-
-        .grid-container {
-            position :relative ;
-            top: 190px;
-            left: -976px;
-
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            grid-gap: 10px;
-            margin-left: -30px;
-            background-color:red;
-            padding: 100px;
-        }
-
-        .grid-container > div {
-            position:relative ;
-            left: -20px;
-
-            width: 199px;
-            height: 90px;
-            background-color: #8F7AB5;
-            border: 1px solid black;
-            text-align: center;
-            font-size: 30px;
-        }
-
-
-
-        div.scrollmenu {
-            background-color: #8F7AB5;
-            overflow: auto;
-            white-space: nowrap;
-            position: relative;
-            top :50px;
-        }
-
-        div.scrollmenu a {
-            position: relative;
-            left: 190px;
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px;
-            text-decoration: none;
-        }
-
-        div.scrollmenu a:hover {
-            background-color: #777;
-        }
-
-
-
-
-
-        * {box-sizing: border-box;}
-
-        .img-comp-container {
-            position: relative;
-            top: 50px ;
-            height: 200px; /*should be the same height as the images*/
-        }
-
-        .img-comp-img {
-            position: absolute;
-            width: auto;
-            height: auto;
-            overflow:hidden;
-        }
-
-        .img-comp-img img {
-            display:block;
-            vertical-align:middle;
-        }
-
-        .img-comp-slider {
-            position: absolute;
-            z-index:9;
-            cursor: ew-resize;
-            /*set the appearance of the slider:*/
-            width: 40px;
-            height: 40px;
-            background-color: #2196F3;
-            opacity: 0.7;
-            border-radius: 50%;
-        }
-
-
-
-        /* .styled {
-            position: relative;
-            top: -50px;
-            left: 410px;
-
-            border: 0;
-            line-height: 2.5;
-            padding: 0 20px;
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            border-radius: 10px;
-            background-color: rgba(220, 0, 0, 1);
-            background-image: linear-gradient(to top left,
-                                              rgba(0, 0, 0, .2),
-                                              rgba(0, 0, 0, .2) 30%,
-                                              rgba(0, 0, 0, 0));
-            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                        inset -2px -2px 3px rgba(0, 0, 0, .6);
-        }
-
-        .styled:hover {
-            background-color: rgba(255, 0, 0, 1);
-        }
-
-        .styled:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                        inset 2px 2px 3px rgba(0, 0, 0, .6);
-        } */
-
-
-
-        .styled-right {
-            position: relative;
-            top: -50px;
-            right: -390px;
-            border: 0;
-
-            cursor: hand;
-            line-height: 2.5;
-            padding: 0 20px;
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            border-radius: 10px;
-            background-color: white;
-            background-image: linear-gradient(to top left,
-            rgba(0, 0, 0, .2),
-            rgba(0, 0, 0, .2) 30%,
-            rgba(0, 0, 0, 0));
-            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-            inset -2px -2px 3px rgba(0, 0, 0, .6);
-        }
-
-        .styled-rigt:hover {
-            background-color: white;
-        }
-
-        .styled-right:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-            inset 2px 2px 3px rgba(0, 0, 0, .6);
-        }
-
-
-
-
-        .styled-left {
-            position: relative;
-            top: -50px;
-            left: 390px;
-
-            border: 0;
-            line-height: 2.5;
-            padding: 0 20px;
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            border-radius: 10px;
-            background-color: white ;
-            background-image: linear-gradient(to top left,
-            rgba(0, 0, 0, .2),
-            rgba(0, 0, 0, .2) 30%,
-            rgba(0, 0, 0, 0));
-            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-            inset -2px -2px 3px rgba(0, 0, 0, .6);
-        }
-
-        .styled-left:hover {
-            background-color: white ;
-
-        }
-
-        .styled-left:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-            inset 2px 2px 3px rgba(0, 0, 0, .6);
-        }
-
-
-        table,
-
-        td {
-
-            border: 1px solid #8F7AB5 ;
-
-
-        }
-
-        thead,
-        tfoot {
-            background-color:#8F7AB5;
-            color: white;
-
-        }
-
-        th{
-            cursor: hand;
-        }
-
-
-        .fit-picture {
-            position: relative;
-            width: 110px;
-        }
-
-
-
-
-
-
-        .fa {
-            position: relative;
-            left: 1120px;
-            padding: 10px;
-
-            width: 30px;
-            text-align: center;
-            text-decoration: none;
-            margin: 5px 2px;
-            border-radius: 50%;
-        }
-
-        .fa:hover {
-            opacity: 20;
-        }
-
-        .fa-facebook {
-            background-color: #8F7AB5;
-            color: white;
-        }
-
-        .fa-twitter {
-            background-color: #8F7AB5;
-            color: white;
-        }
-
-        .fa-google {
-            background: #dd4b39;
-            color: white;
-        }
-
-        .fa-linkedin {
-            background: #007bb5;
-            color: white;
-        }
-
-        .fa-youtube {
-            background-color: #8F7AB5;
-            color: white;
-        }
-
-        .fa-instagram {
-            background-color: #8F7AB5;
-            color: white;
-        }
-
-        .fa-pinterest {
-            background-color: #8F7AB5;
-            color: white;
-        }
-
-        .fa-snapchat-ghost {
-            background: #fffc00;
-            color: white;
-            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        }
-
-        .fa-skype {
-            background: #00aff0;
-            color: white;
-        }
-
-        .fa-android {
-            background: #a4c639;
-            color: white;
-        }
-
-        .fa-dribbble {
-            background: #ea4c89;
-            color: white;
-        }
-
-        .fa-vimeo {
-            background: #45bbff;
-            color: white;
-        }
-
-        .fa-tumblr {
-            background: #2c4762;
-            color: white;
-        }
-
-        .fa-vine {
-            background: #00b489;
-            color: white;
-        }
-
-        .fa-foursquare {
-            background: #45bbff;
-            color: white;
-        }
-
-        .fa-stumbleupon {
-            background: #eb4924;
-            color: white;
-        }
-
-        .fa-flickr {
-            background: #f40083;
-            color: white;
-        }
-
-        .fa-yahoo {
-            background: #430297;
-            color: white;
-        }
-
-        .fa-soundcloud {
-            background: #ff5500;
-            color: white;
-        }
-
-        .fa-reddit {
-            background: #ff5700;
-            color: white;
-        }
-
-        .fa-rss {
-            background: #ff6600;
-            color: white;
-        }
-
-
-
-
-
-        .button {
-            position: relative;
-            left: 320px;
-            top: -20px;
-            padding: 15px 25px;
-            font-size: 24px;
-            text-align: center;
-            cursor: pointer;
-            outline: none;
-            color: #fff;
-            background-color: #8F7AB5;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 9px white;
-        }
-
-        .button:hover {background-color: white}
-
-        .button:active {
-            background-color: white;
-            box-shadow: 0 5px #8F7AB5;
-            transform: translateY(4px);
-        }
-
-
-
-
-
-        /*
-        .favorite {
-            position: relative;
-            top: 80px;
-            right: 380px;
-
-            border: 0;
-            line-height: 2.5;
-            padding: 0 20px;
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            border-radius: 10px;
-            background-color: white ;
-            background-image: linear-gradient(to top left,
-                                              rgba(0, 0, 0, .2),
-                                              rgba(0, 0, 0, .2) 30%,
-                                              rgba(0, 0, 0, 0));
-            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                        inset -2px -2px 3px rgba(0, 0, 0, .6);
-        }
-
-        .favorite:hover {
-            background-color: white ;
-
-        }
-
-        .favorite:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                        inset 2px 2px 3px rgba(0, 0, 0, .6);
-        } */
-
-
-
-        /*
-        body, html {
-          height: 100%;
-          margin: 0;
-          font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-
-        .bg-image {
-
-          background-image: url("photographer.jpg");
-
-
-          filter: blur(8px);
-          -webkit-filter: blur(8px);
-
-
-          height: 100%;
-
-
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-
-
-        .bg-text {
-          background-color: rgb(0,0,0);
-          background-color: rgba(0,0,0, 0.4);
-          color: white;
-          font-weight: bold;
-          border: 3px solid #f1f1f1;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          z-index: 2;
-          width: 80%;
-          padding: 20px;
-          text-align: center;
-        } */
-
-
-        .vertical-menu {
-            position :relative ;
-            top :130px ;
-            left :850px ;
-            width: 200px;
-        }
-
-        .vertical-menu a {
-            background-color: #eee;
-            color: black;
-            display: block;
-            padding: 12px;
-            text-decoration: none;
-        }
-
-        .vertical-menu a:hover {
-            background-color: #ccc;
-        }
-
-        .vertical-menu a.active {
-            background-color: #8F7AB5;
-            color: white;
-        }
-
-
-
-
-
-
-
-
-    </style>
-    <style>
         body, html {
             height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.8;
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
-        .bg-image {
-
-            /* Full height */
-            height: 1450%;
-
-            /* Center and scale the image nicely */
+        /* Full height image header */
+        .bgimg-1 {
             background-position: center;
-            background-repeat: no-repeat;
             background-size: cover;
+            background-image: url("https://impactsansfrontieres.com/wp-content/uploads/2023/02/314064742_1774419392933398_502263807195335370_n.jpg");
+            min-height: 100%;
         }
 
-        /* Images used */
-        .img1 { background-image: url("{{asset('/app/public/avatars/uMco351mYffWWOWY7iaC7TrKqj5MxzRD57aDLW5l.jpg')}}"); }
-        .img2 { background-image: url("https://radio.impactsansfrontieres.com/wp-content/uploads/2021/08/Back-player2.jpg"); }
-        .img3 { background-image: url("https://radio.impactsansfrontieres.com/wp-content/uploads/2021/08/cropped-FavIcon.png"); }
-        /*.img4 { background-image: url(""); }
-        .img5 { background-image: url(""); }
-        .img6 { background-image: url(""); }*/
-
-        /* Position text in the middle of the page/image */
-        .bg-text {
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-            color: white;
-            font-weight: bold;
-            font-size: 80px;
-            border: 10px solid #f1f1f1;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 300px;
-            padding: 20px;
-            text-align: center;
+        .w3-bar .w3-button {
+            padding: 16px;
         }
     </style>
-    <style>
-        .bas .haut{
-            height:5px ;
-            position:absolue ;
-            right:0 ;
-        }
-        .fondu
-        {
-            margin-top:50px ;
-
-            position:relative;
-            height:15px ;
-
-            top:-320px;
-            left:195px;
-
-        }
-        .fondu img {
-            transition:opacity 2s linear ;
-        }
-        .fondu img.haut:hover{
-            opacity:0;
-
-        }
-    </style>
-
-    <link href="toto.css" rel="stylesheet" integrity="">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/mes-styles.css">
-    <link rel="stylesheet" href="css/les-styles.css">
-
-
-    <!-- <script>
-function initComparisons() {
-  var x, i;
-  /*find all elements with an "overlay" class:*/
-  x = document.getElementsByClassName("img-comp-overlay");
-  for (i = 0; i < x.length; i++) {
-    /*once for each "overlay" element:
-    pass the "overlay" element as a parameter when executing the compareImages function:*/
-    compareImages(x[i]);
-  }
-  function compareImages(img) {
-    var slider, img, clicked = 0, w, h;
-    /*get the width and height of the img element*/
-    w = img.offsetWidth;
-    h = img.offsetHeight;
-    /*set the width of the img element to 50%:*/
-    img.style.width = (w / 2) + "px";
-    /*create slider:*/
-    slider = document.createElement("DIV");
-    slider.setAttribute("class", "img-comp-slider");
-    /*insert slider*/
-    img.parentElement.insertBefore(slider, img);
-    /*position the slider in the middle:*/
-    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-    /*execute a function when the mouse button is pressed:*/
-    slider.addEventListener("mousedown", slideReady);
-    /*and another function when the mouse button is released:*/
-    window.addEventListener("mouseup", slideFinish);
-    /*or touched (for touch screens:*/
-    slider.addEventListener("touchstart", slideReady);
-    /*and released (for touch screens:*/
-    window.addEventListener("touchend", slideFinish);
-    function slideReady(e) {
-      /*prevent any other actions that may occur when moving over the image:*/
-      e.preventDefault();
-      /*the slider is now clicked and ready to move:*/
-      clicked = 1;
-      /*execute a function when the slider is moved:*/
-      window.addEventListener("mousemove", slideMove);
-      window.addEventListener("touchmove", slideMove);
-    }
-    function slideFinish() {
-      /*the slider is no longer clicked:*/
-      clicked = 0;
-    }
-    function slideMove(e) {
-      var pos;
-      /*if the slider is no longer clicked, exit this function:*/
-      if (clicked == 0) return false;
-      /*get the cursor's x position:*/
-      pos = getCursorPos(e)
-      /*prevent the slider from being positioned outside the image:*/
-      if (pos < 0) pos = 0;
-      if (pos > w) pos = w;
-      /*execute a function that will resize the overlay image according to the cursor:*/
-      slide(pos);
-    }
-    function getCursorPos(e) {
-      var a, x = 0;
-      e = (e.changedTouches) ? e.changedTouches[0] : e;
-      /*get the x positions of the image:*/
-      a = img.getBoundingClientRect();
-      /*calculate the cursor's x coordinate, relative to the image:*/
-      x = e.pageX - a.left;
-      /*consider any page scrolling:*/
-      x = x - window.pageXOffset;
-      return x;
-    }
-    function slide(x) {
-      /*resize the image:*/
-      img.style.width = x + "px";
-      /*position the slider:*/
-      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-    }
-  }
-}
-</script> -->
 </head>
 <body>
 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="/img/cropped-FavIcon.png" width="70" height="70"></a>
 
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button">ACCEUIL</a>
+            <a href="{{route('podcasts')}}" class="w3-bar-item w3-button"><i class="fa fa-user"></i>PRESENTATION ISF</a>
+            <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i>NOS ACTIONS</a>
+            <a href="{{route('nouveaudepart')}}" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> COMMENT PARTICIPER ?</a>
+            <a href="{{route('decouvjésus')}}" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>NOUS CONTACTER </a>
+            <a href="#contact" class="w3-bar-item w3-button">FAIRE UN DON </a>
+            <a href="#contact" class="w3-bar-item w3-button" style="font-size:30px;color:#8F7AB5"><i class="fa fa-instagram"></i> </a>
+            <a href="#contact" class="w3-bar-item w3-button" style="font-size:30px;color:#8F7AB5"><i class="fa fa-facebook"></i> </a>
 
-<div id="main">
-    <header class="header">
-        <nav class="navbar">
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-            <div class="navbar">
-                <a href="{{route('register')}}">Créer un Compte</a>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-
-                <div class="subnav">
-                    <button class="subnavbtn"> <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="#company">Company</a>
-                        <a href="#team">Team</a>
-                        <a href="#careers">Careers</a>
-                    </div>
-                </div>
-                <div class="subnav">
-                    <button class="subnavbtn"><a href="{{route('podcasts')}}">PodCasts </a><i class="fa fa-caret-down"></i></button>
-
-                    <div class="subnav-content">
-                        <a href="#bring">Arelier sur Les Finances</a>
-                        <a href="#deliver">Deliver</a>
-                        <a href="#package">Package</a>
-                        <a href="#express">Express</a>
-                    </div>
-                </div>
-                <div class="subnav">
-                    <button class="subnavbtn">Menu <i class="fa fa-caret-down"></i></button>
-                    <button class="subnavbtn"><a href="{{route('decouvjésus')}}">Découvrir Jésus</a> <i class="fa fa-caret-down"></i></button>
-                    <button class="subnavbtn"><a href="{{route('nouveaudepart')}}">Nouveau Départ</a> <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="https://impactcentrechretien.com/">ICC</a>
-                        <a href="https://impactsansfrontieres.com/">ISF</a>
-                        <a href="{{route('devenirpartenaire')}}">Devenir Partenaire</a>
-                        <a href="https://impactsansfrontieres.com/faire-un-don/">Faire Un Don</a>
-                        <a href="{{route('notrevision')}}">Notre Vision</a>
-                    </div>
-                </div>
-                <a href="{{route('login')}}">Se connecter</a>
-            </div>
-
-            <div style="padding:0 16px">
-
-            </div>
-
-
-
-        </nav>
-
-
-        <!-- <nav class="navbar">
-          <a href="#home">Home</a>
-       <a href="#news">News</a>
-       <div class="dropdown">
-         <button class="dropbtn">Dropdown
-           <i class="fa fa-caret-down"></i>
-         </button>
-         <div class="dropdown-content">
-           <a href="#">Link 1</a>
-           <a href="#">Link 2</a>
-           <a href="#">Link 3</a>
-         </div>
-       </div>
-        </nav> -->
-    </header>
-
-    <article class="article" id="un">
-
-        <img class="image" src="/img/cropped-FavIcon.png" width="99" height="196" float="left"
-             alt="">
-
-    </article>
-
-
-    <section class="section">
-
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-
-            body {
-
-                font-family: Arial;
-                font-size: 17px;
-            }
-
-            .container {
-                position: relative;
-                top:200px;
-
-                max-width: 800px;
-                margin: 0 auto;
-            }
-
-            .container img {
-                vertical-align: middle;
-                position: relative;
-                top:290px;
-                height: 400px;
-            }
-
-            .container .content {
-
-                position: relative;
-                bottom: 0;
-                background: rgb(0, 0, 0); /* Fallback color */
-
-                background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-                color: #f1f1f1;
-                width: 100%;
-                padding: 20px;
-            }
-        </style>
-
-
-        {{-- <a href="" download>
-             <img src="/img/iStock-1145183163-min-460x307.jpg" alt="W3Schools" width="1000" height="742">
-         </a>
-         <a href="/img/" download>
-             <img src="/img/cropped-FavIcon.png" alt="W3Schools" width="1000" height="742">
-         </a>
-
-         <a href="/img/" download>
-             <img src="/img/image (5).png" alt="W3Schools" width="1000" height="742">
-         </a>
-
-         <a href="/img/" download>
-             <img src="/img/image (6).png" alt="W3Schools" width="1000" height="742">
-         </a>
-
-         <a href="/img/" download>
-             <img src="/img/evang-banner.jpg" alt="W3Schools" width="1000" height="742">
-         </a>
-   --}}
-
-        <iframe  src="https://player.radioking.io/radio-impact-sans-frontieres-1/?c=%238F7AB5&c2=%23ffffff&f=h&i=1&p=1&s=0&li=0&popup=1&plc=0&h=145&l=430&v=2" style="border-radius: 5px; width: 430px; height: 145px; position:relative ; left :280px ; top:280px; z-index: 3;" frameBorder="0" ></iframe><script type="text/javascript" src="https://player.radioking.io/scripts/iframe.bundle.js"></script>
-        <a href="" download>
-            <img src="/img/Back-player-1536x320.jpg" alt="W3Schools" width="1000" height="742">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
         </a>
-
-
-        <div id="auCentre">
-
-            <div class="fondu">
-
-                <img class="haut" src="/img/cropped-FavIcon.png">
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <style>
-    video {
-      position: relative;
-      top:290px;
-      left: 50px;
-      max-width: 200%;
-      height: 399px;
-    }
-    </style> -->
-        <!-- <video autoplay muted loop id="myVideo">
-      <source src="rain.mp4" type="video/mp4">
-
-
-
-    </video>  -->
-        <!-- <video width="870" controls>
-        /home/igorlewalibari/tm4-master/app/Http/Kernel.php  <source src="mov_bbb.mp4" type="video/mp4">
-          <source src="mov_bbb.ogg" type="video/ogg">
-          Your browser does not support HTML5 video.
-        </video> -->
-
-
-
-
-
-
-
-
-
-
-        <div class="content">
-            <h1></h1>
-
-            <button class="button"><a href="https://impactcentrechretien.elvanto.eu/form/c3d4eddd-83aa-4730-9416-ebc76be3adaf">Acceptez Jésus !</a></button>
-
-
-            <p></p>
-            <!-- <button id="myBtn" onclick="myFunction()"></button> -->
-        </div>
-
-        <script>
-            var video = document.getElementById("myVideo");
-            var btn = document.getElementById("myBtn");
-
-            function myFunction() {
-                if (video.paused) {
-                    video.play();
-                    btn.innerHTML = "Pause";
-                } else {
-                    video.pause();
-                    btn.innerHTML = "Play";
-                }
-            }
-        </script>
-
-
-
-
-        <script>
-            function initComparisons() {
-                var x, i;
-                /*find all elements with an "overlay" class:*/
-                x = document.getElementsByClassName("img-comp-overlay");
-                for (i = 0; i < x.length; i++) {
-                    /*once for each "overlay" element:
-                    pass the "overlay" element as a parameter when executing the compareImages function:*/
-                    compareImages(x[i]);
-                }
-                function compareImages(img) {
-                    var slider, img, clicked = 0, w, h;
-                    /*get the width and height of the img element*/
-                    w = img.offsetWidth;
-                    h = img.offsetHeight;
-                    /*set the width of the img element to 50%:*/
-                    img.style.width = (w / 2) + "px";
-                    /*create slider:*/
-                    slider = document.createElement("DIV");
-                    slider.setAttribute("class", "img-comp-slider");
-                    /*insert slider*/
-                    img.parentElement.insertBefore(slider, img);
-                    /*position the slider in the middle:*/
-                    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-                    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-                    /*execute a function when the mouse button is pressed:*/
-                    slider.addEventListener("mousedown", slideReady);
-                    /*and another function when the mouse button is released:*/
-                    window.addEventListener("mouseup", slideFinish);
-                    /*or touched (for touch screens:*/
-                    slider.addEventListener("touchstart", slideReady);
-                    /*and released (for touch screens:*/
-                    window.addEventListener("touchend", slideFinish);
-                    function slideReady(e) {
-                        /*prevent any other actions that may occur when moving over the image:*/
-                        e.preventDefault();
-                        /*the slider is now clicked and ready to move:*/
-                        clicked = 1;
-                        /*execute a function when the slider is moved:*/
-                        window.addEventListener("mousemove", slideMove);
-                        window.addEventListener("touchmove", slideMove);
-                    }
-                    function slideFinish() {
-                        /*the slider is no longer clicked:*/
-                        clicked = 0;
-                    }
-                    function slideMove(e) {
-                        var pos;
-                        /*if the slider is no longer clicked, exit this function:*/
-                        if (clicked == 0) return false;
-                        /*get the cursor's x position:*/
-                        pos = getCursorPos(e)
-                        /*prevent the slider from being positioned outside the image:*/
-                        if (pos < 0) pos = 0;
-                        if (pos > w) pos = w;
-                        /*execute a function that will resize the overlay image according to the cursor:*/
-                        slide(pos);
-                    }
-                    function getCursorPos(e) {
-                        var a, x = 0;
-                        e = (e.changedTouches) ? e.changedTouches[0] : e;
-                        /*get the x positions of the image:*/
-                        a = img.getBoundingClientRect();
-                        /*calculate the cursor's x coordinate, relative to the image:*/
-                        x = e.pageX - a.left;
-                        /*consider any page scrolling:*/
-                        x = x - window.pageXOffset;
-                        return x;
-                    }
-                    function slide(x) {
-                        /*resize the image:*/
-                        img.style.width = x + "px";
-                        /*position the slider:*/
-                        slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-                    }
-                }
-            }
-        </script>
-
-        <div class="img-comp-container">
-            <div class="img-comp-img">
-                <img src="/img/Rester-en-contact-1024x683.jpeg" alt="Nouveau-Depart" width="950" height="200"  >
-
-                <button class="favorite styled-right " style="cursor:hand;"
-                        type="button">
-                    <a  class="hand" href="https://www.youtube.com/watch?v=o3tyc85zwzw" >Rester En Contact !</a>
-
-                </button>
-
-            </div>
-            <div class="img-comp-img img-comp-overlay">
-                <img src="/img/Nouveau-depart-1024x683.jpeg" alt="Rester En Contact" width="950" height="200">
-
-                <button class="favorite styled-left"
-                        type="button" style="cursor:hand;" >
-                    <a  class="hand" href="https://emcitv.com/audio/"> Nouveau-Depart !</a>
-
-                </button>
-            </div>
-        </div>
-
-        <script>
-            /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
-            initComparisons();
-        </script>
-
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-
-
-
-            h1 {
-                font-size: 50px;
-                word-break: break-all;
-            }
-
-            .row {
-                position:relative ;
-                top:-250px;
-                margin: 10px -16px;
-            }
-
-            /* Add padding BETWEEN each column */
-            .row,
-            .row > .column {
-                padding: 8px;
-            }
-
-            /* Create three equal columns that floats next to each other */
-            .column {
-                position:relative ;
-                right :120px ;
-                float: left;
-                width: 33.33%;
-                display: none; /* Hide all elements by default */
-            }
-
-            /* Clear floats after rows */
-            .row:after {
-
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            /* Content */
-            .content {
-                background-color: white;
-                padding: 10px;
-            }
-
-            /* The "show" class is added to the filtered elements */
-            .show {
-                display: block;
-            }
-
-            /* Style the buttons */
-            .btn {
-                border: none;
-                outline: none;
-                padding: 12px 16px;
-                background-color: white;
-                cursor: pointer;
-            }
-
-            .btn:hover {
-                background-color: #ddd;
-            }
-
-            .btn.active {
-                background-color: #666;
-                color: white;
-            }
-        </style>
-
-        <div class="vertical-menu">
-            <a href="#" class="active">Programme</a>
-            <a href="https://www.w3schools.com/howto/howto_css_vertical_menu.asp">Lundi</a>
-            <a href="#">Mardi</a>
-            <a href="#">Mercredi</a>
-            <a href="#">Jeudi</a>
-            <a href="#">Vendredi</a>
-            <a href="#">Samedi</a>
-            <a href="#">Dimanche</a>
-        </div>
-
-
-
-
-
-        <div class="row">
-            <div class="column nature">
-                <div class="content">
-                    <img src="/img/Qui suis-je.jpg" alt="Mountains" style="width:100%">
-                    <a href="">Qui suis-je ?</a>
-
-                </div>
-            </div>
-            <div class="column nature">
-                <div class="content">
-                    <img src="/img/Qui est JESUS.jpg" alt="Lights" style="width:100%">
-                    <a href="https://radio.impactsansfrontieres.com/wp-content/uploads/2021/12/Le-sauveur-Jesus-la-face-de-Dieu-Le-connaitre-pour-mieux-Le-manifester-Pasteur-Alexandre-Amazou-Part2.mp3">Qui est JESUS</a>
-
-                </div>
-            </div>
-            <div class="column nature">
-                <div class="content">
-                    <img src="/img/Le pardon.jpg" alt="Nature" style="width:100%">
-                    <a href="https://radio.impactsansfrontieres.com/wp-content/uploads/2021/12/Le_Pardon_Une_Puissance_Qui_Libere_1-1.mp3">Le Pardon</a>
-
-                </div>
-            </div>
-
-            <div class="column cars">
-                <div class="content">
-                    <img src="/img/La pâque.jpg" alt="Car" style="width:100%">
-                   <a href="">La Pâque</a>
-
-                </div>
-            </div>
-            <div class="column cars">
-                <div class="content">
-                    <img src="/img/La paix intérieure.jpg" alt="Car" style="width:100%">
-                    <a href="https://radio.impactsansfrontieres.com/wp-content/uploads/2021/12/Comment-trouver-la-paix-interieure-Jeremy-Sourdril160K__MP3-192K-Copie.mp3">La Paix intérieure</a>
-                </div>
-            </div>
-            <div class="column cars">
-                <div class="content">
-                    <img src="/img/La délivrance.jpg" alt="Car" style="width:100%">
-                    <a href="https://radio.impactsansfrontieres.com/wp-content/uploads/2021/12/METTRE-FIN-AUX-OEUVRES-DES-DEMONS-Pasteur-Mohammed-Sanogo720P__MP3-192K-2.mp3">La Délivrance</a>
-
-                </div>
-            </div>
-
-            <div class="column people">
-                <div class="content">
-                    <img src="/img/But-mission de vie.jpg" alt="Car" style="width:100%">
-                    <a href="https://radio.impactsansfrontieres.com/wp-content/uploads/2021/12/Mission_Pst-Yves-CASTANOU-Jesus-premier-vrai-ambassadeur-du-Royaume_Partie1-1.mp3">But-mission de vie</a>
-
-                </div>
-            </div>
-            <div class="column people">
-                <div class="content">
-                    <img src="/img/La dépendance.jpg" alt="Car" style="width:100%">
-                    <a href="">La Dépendance</a>
-
-                </div>
-            </div>
-            <div class="column people">
-                <div class="content">
-                    <img src="/img/La repentance.jpg" alt="Car" style="width:100%">
-                   <a href="https://radio.impactsansfrontieres.com/wp-content/uploads/2021/12/La-repentance-Change-de-vie-Pasteur-Mohammed-Sanogo-3.mp3">La Repentance</a>
-
-                </div>
-            </div>
-
-
-
-
-
-        </div>
-
-
-        <script>
-            filterSelection("all")
-            function filterSelection(c) {
-                var x, i;
-                x = document.getElementsByClassName("column");
-                if (c == "all") c = "";
-                for (i = 0; i < x.length; i++) {
-                    w3RemoveClass(x[i], "show");
-                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-                }
-            }
-
-            function w3AddClass(element, name) {
-                var i, arr1, arr2;
-                arr1 = element.className.split(" ");
-                arr2 = name.split(" ");
-                for (i = 0; i < arr2.length; i++) {
-                    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-                }
-            }
-
-            function w3RemoveClass(element, name) {
-                var i, arr1, arr2;
-                arr1 = element.className.split(" ");
-                arr2 = name.split(" ");
-                for (i = 0; i < arr2.length; i++) {
-                    while (arr1.indexOf(arr2[i]) > -1) {
-                        arr1.splice(arr1.indexOf(arr2[i]), 1);
-                    }
-                }
-                element.className = arr1.join(" ");
-            }
-
-
-            // Add active class to the current button (highlight it)
-            var btnContainer = document.getElementById("myBtnContainer");
-            var btns = btnContainer.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-                btns[i].addEventListener("click", function(){
-                    var current = document.getElementsByClassName("active");
-                    current[0].className = current[0].className.replace(" active", "");
-                    this.className += " active";
-                });
-            }
-        </script>
-
-
-
-    </section>
-
-
-
-</body>
-<footer></footer>
+    </div>
 </div>
 
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ACCEUIL</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PRESENTATION ISF</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">COMMENT PARTICIPER ?</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">NOUS CONTACTER</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">FAIRE UN DON</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="font-size:30px;color:#8F7AB5"><i class="fa fa-instagram"></i> </a>
+    <a href="#contact" class="w3-bar-item w3-button" style="font-size:30px;color:#8F7AB5"><i class="fa fa-facebook"></i> </a>
 
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-jumbo w3-hide-small">Impact Sans Frontières</span><br>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+        <span class="w3-large">
+            « … n'aimons pas seulement en paroles, avec de beaux discours; faisons preuve d'un véritable amour qui se manifeste par des actes.»
+            </span>
+        <span class="w3-large">‭‭1 Jean‬ ‭3‬:‭18‬ ‭BFC</span>
+
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+    <h2 class="w3-center">Bienvenue sur Impact Sans Frontières</h2>
+    <p class="w3-center w3-large">Impact Sans Frontières (ISF) est un mouvement d’évangélisation missionnaire Créée en 2008 dont le visionnaire est Yvan Castanou et le Président est André AMBENDET.</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+        <!-- Promo Section - "We know design" -->
+        <div class="w3-container w3-light-grey" style="padding:128px 16px">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="/img/313950630_1774419372933400_3470757814828850869_n.jpg" alt="Buildings" width="700" height="394">
+
+                    <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Voir Nos Actions</a>
+                    <h4>
+                        <a href="" class="">ACTES DE COMPASSION</a>
+                        <i class="fas fa-hand-holding-heart " style='font-size:48px;color:black'></i>
+                    </h4>
+
+                    <h4><a href="">COMPAGNES D'EVANGELISATION</a> </h4>
+                    <h4><a href="">IMPLANTATIONS DES EGLISES</a>
+                        <i class='fas fa-handshake' style='font-size:36px'></i>
+                    </h4>
+
+                </div>
+                <div class="w3-col m6">
+                    <p>  André AMBENDET.</p>
+                    <img class="w3-image w3-round-large" src="/img/IMGL9864.jpg" alt="Buildings" width="700" height="394">
+                </div>
+                <div class="w3-col m6">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+
+<!-- Work Section -->
+
+<!-- Modal for full size images on click-->
+
+
+<!-- Pricing Section -->
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large"></p>
+    <div style="margin-top:48px">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>20, rue des sablons, 94470 Boissy-Saint-Léger.</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: contact@impactsansfrontieres.com</p>
+        <br>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Nom"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Prenom"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button " style="background-color: #8F7AB5 " type="submit">
+                    <i class="fa fa-paper-plane "></i> ENVOYER
+                </button>
+            </p>
+        </form>
+        <!-- Image of location/map -->
+        <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center " style="background-color: #8F7AB5; height:300px">
+    <a href="#home" class="w3-button "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official " ></i>
+        <i class="fa fa-instagram "></i>
+
+    </div>
+    <p> <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green" style="background-color: #8F7AB5"></a></p>
+</footer>
+
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+</script>
+
+</body>
 </html>

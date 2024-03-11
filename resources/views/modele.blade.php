@@ -10,6 +10,9 @@
      .etat{background-color: red}
      .error{background-color: rgb(250,78,104);}
    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+
 </head>
  <body>
 
@@ -17,8 +20,9 @@
 
 @section('menu')
 @guest
-    <a href="{{route('login')}}">Login</a>
-    <a href="{{route('register')}}">Register</a>
+    <a href="{{route('login')}}"  style="max-width:1400px;margin-top:100px; position: relative; left: 500px">Login</a>
+    <a href="{{route('register')}}" style="max-width:1400px;margin-top:100px; position: relative; left: 500px">Register</a>
+
 @endguest
 
      @auth

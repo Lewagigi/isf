@@ -1,701 +1,191 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
+    <title>Impact Sans Frontières</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        * {
-            box-sizing: border-box;
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+        body, html {
+            height: 100%;
+            line-height: 1.8;
         }
 
-        body {
-            margin: 0;
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("https://impactsansfrontieres.com/wp-content/uploads/2023/02/314064742_1774419392933398_502263807195335370_n.jpg");
+            min-height: 100%;
         }
 
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .navbar a {
-            float: left;
-            font-size: 16px;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font: inherit;
-            margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: red;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            width: 100%;
-            left: 0;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content .header {
-            background: red;
+        .w3-bar .w3-button {
             padding: 16px;
-            color: white;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Create three equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 10px;
-            background-color: #ccc;
-            height: 250px;
-        }
-
-        .column a {
-            float: none;
-            color: black;
-            padding: 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .column a:hover {
-            background-color: #ddd;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-                height: auto;
-            }
         }
     </style>
-
-    <style>
-        * {box-sizing: border-box}
-        body {font-family: Verdana, sans-serif; margin:0 }
-        .mySlides {display: none}
-        img {vertical-align: middle; }
-
-        /* Slideshow container */
-        .slideshow-container {
-            max-width: 10000px;
-            position: relative;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        /* Next & previous buttons */
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
-        }
-
-        /* Caption text */
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 0px ;
-            position: relative;
-            margin: 10px;
-            top:-390px;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-
-
-        .button {
-            padding: 15px 25px;
-            font-size: 24px;
-            text-align: center;
-            cursor: pointer;
-            outline: none;
-            color: #fff;
-            background-color: #04AA6D;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 9px #999;
-
-        }
-
-        .button:hover {background-color: #3e8e41}
-
-        .button:active {
-            background-color: #3e8e41;
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-           }
-
-
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        /* The dots/bullets/indicators */
-
-
-        .active, .dot:hover {
-            background-color: #717171;
-        }
-
-        /* Fading animation */
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
-        }
-
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-            .prev, .next,.text {font-size: 11px}
-        }
-    </style>
-
-    <style>
-        .block {
-            display: block;
-            width: 100%;
-            border: none;
-            background-color: #04AA6D;
-            color: white;
-
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-            height:193px;
-            margin: 0px;
-            position: relative;
-            top: -34px;
-        }
-
-        .block:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    </style>
-
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* The grid: Three equal columns that floats next to each other */
-        .column {
-            float: left;
-
-            padding: 50px;
-            text-align: center;
-            font-size: 25px;
-
-
-        }
-
-
-
-    </style>
-
-    <style>
-        .container {
-            position: relative;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .container img {
-            width: 100%;
-            height: auto;
-        }
-
-        .container .btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            background-color: #555;
-            color: white;
-            font-size: 16px;
-            padding: 12px 24px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .container .btn:hover {
-            background-color: black;
-        }
-    </style>
-
-
-    <style>
-        .btn {
-            border: none;
-            color: white;
-            padding: 14px 28px;
-            font-size: 16px;
-            cursor: pointer;
-            position: relative;
-            top: -250px;
-            left: 190px;
-            z-index: 1;
-        }
-
-        .success {background-color: #04AA6D;} /* Green */
-        .success:hover {background-color: #46a049;}
-
-        .info {background-color: #2196F3;} /* Blue */
-        .info:hover {background: #0b7dda;}
-
-        .warning {background-color: #ff9800;} /* Orange */
-        .warning:hover {background: #e68a00;}
-
-        .danger {background-color: #f44336;} /* Red */
-        .danger:hover {background: #da190b;}
-
-        .default {background-color: #e7e7e7; color: black;} /* Gray */
-        .default:hover {background: #ddd;}
-    </style>
-
-    <style>
-        .bt {
-            border: none;
-            color: white;
-            padding: 14px 28px;
-            font-size: 16px;
-            cursor: pointer;
-            position: relative;
-            top: -250px;
-            right: -948px;
-
-        }
-
-        .success {background-color: #04AA6D;} /* Green */
-        .success:hover {background-color: #46a049;}
-
-        .info {background-color: #2196F3;} /* Blue */
-        .info:hover {background: #0b7dda;}
-
-        .warning {background-color: #ff9800;} /* Orange */
-        .warning:hover {background: #e68a00;}
-
-        .danger {background-color: #f44336;} /* Red */
-        .danger:hover {background: #da190b;}
-
-        .default {background-color: #e7e7e7; color: black;} /* Gray */
-        .default:hover {background: #ddd;}
-    </style>
-
-
-    <style>
-        .button {
-            padding: 15px 25px;
-            font-size: 24px;
-            text-align: center;
-            cursor: pointer;
-            outline: none;
-            color: #fff;
-            background-color: #04AA6D;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 9px #999;
-        }
-
-        .button:hover {background-color: #3e8e41}
-
-        .button:active {
-            background-color: #3e8e41;
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
-    </style>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Float four columns side by side */
-        .column {
-            float: left;
-            width: 25%;
-            padding: 0 10px;
-        }
-
-        /* Remove extra left and right margins, due to padding */
-        .row {margin: 0 -5px;}
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive columns */
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-                display: block;
-                margin-bottom: 20px;
-            }
-        }
-
-        /* Style the counter cards */
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 16px;
-            text-align: center;
-            background-color: #f1f1f1;
-        }
-    </style>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 5px;
-        }
-
-        /* Clearfix (clear floats) */
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-    </style>
-
-      <style>
-          footer{
-              height:90px;
-              color: #8F7AB5;
-             }
-      </style>
-
 </head>
 <body>
 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="{{route('presentationISF')}}" class="w3-bar-item w3-button w3-wide"><img src="/img/cropped-FavIcon.png" width="70" height="70"></a>
 
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <div class="dropdown">
-        <button class="dropbtn">Dropdown
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <div class="header">
-                <h2>Mega Menu</h2>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <h3>Category 1</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                <div class="column">
-                    <h3>Category 2</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                <div class="column">
-                    <h3>Category 3</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="{{route('maiin')}}" class="w3-bar-item w3-button">ACCEUIL</a>
+            <a href="{{route('presentationISF')}}" class="w3-bar-item w3-button">PRESENTATION ISF</a>
+            <a href="{{route('nosactions')}}" class="w3-bar-item w3-button">NOS ACTIONS</a>
+            <a href="{{route('commentparticiper')}}" class="w3-bar-item w3-button"> COMMENT PARTICIPER ?</a>
+            <a href="{{route('nouscontacter')}}" class="w3-bar-item w3-button">NOUS CONTACTER </a>
+            <a href="https://donorbox.org/impactsansfrontieres" class="w3-bar-item w3-button">FAIRE UN DON </a>
+            <a href="https://www.instagram.com/" class="w3-bar-item w3-button" style="font-size:30px;color:#8F7AB5"><i class="fa fa-instagram"></i> </a>
+            <a href="https://www.facebook.com/ImpactSansFrontieres/?locale=fr_FR" class="w3-bar-item w3-button" style="font-size:30px;color:#8F7AB5"><i class="fa fa-facebook"></i> </a>
+
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="{{route('maiin')}}" onclick="w3_close()" class="w3-bar-item w3-button">ACCEUIL</a>
+    <a href="{{route('presentationISF')}}" onclick="w3_close()" class="w3-bar-item w3-button">PRESENTATION ISF</a>
+    <a href="{{route('commentparticiper')}}" onclick="w3_close()" class="w3-bar-item w3-button">COMMENT PARTICIPER ?</a>
+    <a href="{{route('nouscontacter')}}" onclick="w3_close()" class="w3-bar-item w3-button">NOUS CONTACTER</a>
+    <a href="https://donorbox.org/impactsansfrontieres" onclick="w3_close()" class="w3-bar-item w3-button">FAIRE UN DON</a>
+    <a href="https://www.instagram.com/" class="w3-bar-item w3-button" style="font-size:30px;color:#8F7AB5"><i class="fa fa-instagram"></i> </a>
+    <a href="https://www.facebook.com/ImpactSansFrontieres/?locale=fr_FR" class="w3-bar-item w3-button" style="font-size:30px;color:#8F7AB5"><i class="fa fa-facebook"></i> </a>
+
+</nav>
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-jumbo w3-hide-small">Impact Sans Frontières</span><br>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Impact Sans Frontières</span><br>
+            <span class="w3-large">
+            « … n'aimons pas seulement en paroles, avec de beaux discours; faisons preuve d'un véritable amour qui se manifeste par des actes.»
+            </span>
+        <span class="w3-large">‭‭1 Jean‬ ‭3‬:‭18‬ ‭BFC</span>
+
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+    <h2 class="w3-center">Bienvenue sur Impact Sans Frontières</h2>
+    <p class="w3-center w3-large">Impact Sans Frontières (ISF) est un mouvement d’évangélisation missionnaire Créée en 2008 dont le visionnaire est Yvan Castanou et le Président est André AMBENDET.</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+        <div class="w3-col m6">
+            <img class="w3-image w3-round-large" src="/img/313950630_1774419372933400_3470757814828850869_n.jpg" alt="Buildings" width="700" height="394">
+
+            <p><a href="{{route('nosactions')}}" class="w3-button w3-black"><i class="fa fa-th"> </i> Voir Nos Actions</a>
+                <h4>
+                 <a href="{{route('actesdecompassion')}}" class="">ACTES DE COMPASSION</a>
+                <i class="fas fa-hand-holding-heart " style='font-size:48px;color:black'></i>
+            </h4>
+
+                 <h4><a href="{{route('evangelisation')}}">COMPAGNES D'EVANGELISATION</a> </h4>
+                 <h4><a href="">IMPLANTATIONS DES EGLISES</a>
+                     <i class='fas fa-handshake' style='font-size:36px'></i>
+                 </h4>
+
+        </div>
+        <div class="w3-col m6">
+            <p>  André AMBENDET.</p>
+            <img class="w3-image w3-round-large" src="/img/IMGL9864.jpg" alt="Buildings" width="700" height="394">
+        </div>
+        <div class="w3-col m6">
+
         </div>
     </div>
 </div>
 
-
-
-
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="/img/isf2.png" style="width:100%">
-
-        <div class="text">
-            <button class="button">Click Me</button>
-        </div>
     </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+
+<!-- Work Section -->
+
+<!-- Modal for full size images on click-->
 
 
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="img/isf1.png" style="width:100%">
-        <div class="text">
-            <button class="button">Click Me</button>
-        </div>
+<!-- Pricing Section -->
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large"></p>
+    <div style="margin-top:48px">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>20, rue des sablons, 94470 Boissy-Saint-Léger.</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: contact@impactsansfrontieres.com</p>
+        <br>
+
+        <!-- Image of location/map -->
+
     </div>
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-
 </div>
-<br>
 
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+<!-- Footer -->
+<footer class="w3-center " style="background-color: #8F7AB5; height:300px">
+    <a href="#home" class="w3-button "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official " ></i>
+        <i class="fa fa-instagram "></i>
+
+    </div>
+    <p> <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green" style="background-color: #8F7AB5"></a></p>
+</footer>
 
 <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
     }
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
     }
 
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
     }
 </script>
 
-
-<button class="block">Block Button</button>
-
-
-<p></p>
-
-{{--
-<div class="row">
-
-
-        <img src="/img/Rester-en-contact-1024x683.jpeg"  style="width:700px ;position: relative; left: 20px;">
-
-            <img src="/img/Nouveau-depart-1024x683.jpeg"  style="width:700px ;position: relative; left: 60px;" >
-
-</div>
---}}
-
-<div class="row">
-    <img src="/img/Rester-en-contact-1024x683.jpeg"  style="width:510px ;position: relative; left: 20px;">
-    <img src="/img/Nouveau-depart-1024x683.jpeg"  style="width:510px ;position: relative; left: 160px;" >
-
-</div>
-
-
-<button class="btn success">Success</button>
-
-<button class="bt warning">Warning</button>
-
-<br>
-
-<div class="row">
-    <div class="column">
-        <img src="/img/La pâque.jpg" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/La-Misericorde-de-DIEU-1024x427.jpeg" alt="Forest" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/Le pardon.jpg" alt="Mountains" style="width:100%">
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="column">
-        <img src="/img/La délivrance.jpg" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/La repentance.jpg" alt="Forest" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/La paix intérieure.jpg" alt="Mountains" style="width:100%">
-    </div>
-</div>
-
-
-
-<div class="row">
-    <div class="column">
-        <img src="/img/image (3).png" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/image (4).png" alt="Forest" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/La dépendance.jpg" alt="Mountains" style="width:100%">
-    </div>
-</div>
-
-<h1>
-    <br>
-
-</h1>
-
-<h1> PodCast : Les personnes qui ont fait une rencontre </h1>
-
-<div class="row">
-    <div class="column">
-        <img src="/img/1.png" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/2.png" alt="Forest" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/3.png" alt="Mountains" style="width:100%">
-    </div>
-</div>
-
-<div class="row">
-    <div class="column">
-        <img src="/img/4.png" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/7.png" alt="Forest" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/12.png" alt="Mountains" style="width:100%">
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="column">
-        <img src="/img/14.png" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/17.png" alt="Forest" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/18.png" alt="Mountains" style="width:100%">
-    </div>
-</div>
-
-
-
-<div class="row">
-    <div class="column">
-        <img src="/img/18.png" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/19.png" alt="Forest" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="/img/21.png" alt="Mountains" style="width:100%">
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
 </body>
-
-<footer>
-
-</footer>
-
 </html>
